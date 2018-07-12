@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  
+    <servlet>
+  	<servlet-name>abc</servlet-name>
+  	<servlet-class>com.calebo.rev.project01.servlets.LoginServlets</servlet-class>
+  	</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>abc</servlet-name>
+  	<url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>createAcc</servlet-name>
+  	<servlet-class>com.calebo.rev.project01.servlets.CreateAccountServlets</servlet-class>
+  	</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>createAcc</servlet-name>
+  	<url-pattern>/createAccount</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+  	<servlet-name>rForm</servlet-name>
+  	<servlet-class>com.calebo.rev.project01.servlets.ReimbursementFormServlet</servlet-class>
+  	</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>rForm</servlet-name>
+  	<url-pattern>/reimbursementForm</url-pattern>
+  </servlet-mapping> 
+  
+    <servlet>
+  	<servlet-name>RORForm</servlet-name>
+  	<servlet-class>com.calebo.rev.project01.servlets.ReadOnlyRFormServlet</servlet-class>
+  	</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RORForm</servlet-name>
+  	<url-pattern>/readOnlyForm</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>

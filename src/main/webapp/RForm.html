@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tuition Reimbursement Form</title>
+        <link rel="stylesheet" href="RForm.css">
+        <link href="JQuerry/datedropper.css" rel="stylesheet" type="text/css" />
+        <script src="JQuerry/jquery.js"></script>
+        <script src="JQuerry/datedropper.js"></script>
+    </head>
+    <body>
+        <div class="reimbursement-form-page">
+        <div class="form">
+            <form class="reimbursement-form" method="post">
+                <label for="event-type">Event type:</label>
+                <input type="text" id="event-type" placeholder="Event type"/>
+                
+                <label for="event-location">Event location:</label>
+                <input type="text" id="event-location" placeholder="Event location"/>
+                
+                <label for="event-cost">Event cost:</label>
+                <input type="number" id="event-cost" placeholder="Event cost"/>
+                
+                <label for="grading-format">Grading format:</label>
+                <input type="text" id="grading-format" placeholder="Grading format"/>
+                
+                <label for="start-time">Start time:</label>
+                <input type="time" id="start-time">
+                
+                <label for="end-time">End time:</label>
+                <input type="time" id="end-time">
+                
+                <label for="start-date">Start date:</label>
+                <input type="text" id="start-date" placeholder="start date"/>
+                
+                <label for="end-date">End date:</label>
+                <input type="text" id="end-date" placeholder="end date"/>
+                
+                <label for="missed-time">How much work time will be missed:</label>
+                <input type="text" id="missed-time" placeholder="missed work time">
+                
+                <label for="description">Event description:</label>
+                <textarea id="description" placeholder="Event description"></textarea>
+                
+                <label for="justification">Work related justification:</label>
+                <textarea id="justification" placeholder="Work related justification"></textarea>
+                
+                <label for="event-related-files">Event related files:</label>
+                <input type="file" id="event-related-files" multiple>
+                
+                <label for="approval-files">Approval files:</label>
+                <input type="file" id="approval-files" multiple>
+                
+                <button id="submit-form">Submit form</button>
+                
+            </form>
+        </div>
+        </div>
+        <script>$("#end-date").dateDropper();</script>
+        <script>$("#start-date").dateDropper();</script>
+        <script src="RForm.js"></script>
+    </body>
+</html>
